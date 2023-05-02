@@ -14,13 +14,12 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include  # 由于使用了二级路由机制，需要添加
 from login import views
-from django.urls import include  # 由于使用了二级路由机制，需要添加
 
 urlpatterns = [
     path("", views.login),
     path("admin/", admin.site.urls),
-    path("login/", include("login.urls")),  # 包含二级路由
+    path("user/", include("login.urls")),  # 包含二级路由
     path("captcha", include("captcha.urls")),
 ]

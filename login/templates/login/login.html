@@ -15,7 +15,7 @@
 
     <div class="container">
             <div class="col">
-              <form class="form-login" action="/login/" method="post">
+              <form class="form-login" action="/user/login/" method="post">
                    <!--判断变量message是否为空，不是就执行if语句内的代码显示提示信息-->
 
                   {% if login_from.captcha.errors %}
@@ -48,7 +48,7 @@
                         {{ login_from.captcha }}
                     </div>
                 <div>
-                  <a href="/register/" class="text-success "><ins>新用户注册</ins></a>
+                  <a href="/user/register/" class="text-success "><ins>新用户注册</ins></a>
                   <button type="submit" class="btn btn-primary float-right">登录</button>
                 </div>
               </form>

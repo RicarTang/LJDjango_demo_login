@@ -14,7 +14,7 @@
   <body>
     <div class="container">
             <div class="col">
-                <form class="form-register" action="/register/" method="post">
+                <form class="form-register" action="/user/register/" method="post">
 
                     {% if register_form.captcha.errors %}
                         <div class="alert alert-warning">{{ register_form.captcha.errors }}</div>
@@ -51,7 +51,7 @@
                   </div>
 
                   <div>
-                      <a href="/login/"  ><ins>直接登录</ins></a>
+                      <a href="/user/login/"  ><ins>直接登录</ins></a>
                       <button type="submit" class="btn btn-primary float-right">注册</button>
                   </div>
                 </form>
