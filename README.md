@@ -1,0 +1,2 @@
+# LJDjango_demo_login
+刘江Django登陆注册练习demo
