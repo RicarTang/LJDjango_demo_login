@@ -4,8 +4,9 @@ verify_ssl = true
 name = "pip_conf_index_global"
 
 [packages]
-django = "*"
+django = "==3.1"
 django-simple-captcha = "*"
+django-simpleui = "*"
 
 [dev-packages]
 black = "*"
